@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e  # 遇到错误时退出
+
 # 配置变量
 export GH_PROXY='https://ghproxy.129262.xyz/'
 export GITHUB_TOKEN="xxx"
