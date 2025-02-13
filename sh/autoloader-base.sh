@@ -10,7 +10,7 @@ export AUTOLOADER_REPO_OWNER="owner"
 export AUTOLOADER_REPO_NAME="repo"
 export AUTOLOADER_FILE_NAME="python.py"
 export BRANCH_NAME="main"
-AUTOLOADER_FILE="$AUTOLOADER_DIR/$(basename $AUTOLOADER_FILE_NAME)"
+export AUTOLOADER_FILE="$AUTOLOADER_DIR/$(basename $AUTOLOADER_FILE_NAME)"
 
 # 自定义字体彩色，read 函数
 warning() { echo -e "\033[31m\033[01m$*\033[0m"; }  # 红色
