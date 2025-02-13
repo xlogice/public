@@ -3,13 +3,13 @@
 set -e  # 遇到错误时退出
 
 # 配置变量
-GH_PROXY='https://ghproxy.129262.xyz/'
-GITHUB_TOKEN="xxx"
-AUTOLOADER_DIR="/opt/autoloader"
-AUTOLOADER_REPO_OWNER="owner"
-AUTOLOADER_REPO_NAME="repo"
-AUTOLOADER_FILE_NAME="python.py"
-BRANCH_NAME="main"
+export GH_PROXY='https://ghproxy.129262.xyz/'
+export GITHUB_TOKEN="xxx"
+export AUTOLOADER_DIR="/opt/autoloader"
+export AUTOLOADER_REPO_OWNER="owner"
+export AUTOLOADER_REPO_NAME="repo"
+export AUTOLOADER_FILE_NAME="python.py"
+export BRANCH_NAME="main"
 AUTOLOADER_FILE="$AUTOLOADER_DIR/$(basename $AUTOLOADER_FILE_NAME)"
 
 # 自定义字体彩色，read 函数
