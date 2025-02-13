@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e  # 遇到错误时退出
-
 # 配置变量
 export GH_PROXY='https://ghproxy.129262.xyz/'
 export GITHUB_TOKEN="xxx"
@@ -18,7 +16,6 @@ error() { echo -e "\033[31m\033[01m$*\033[0m" && exit 1; } # 红色
 info() { echo -e "\033[32m\033[01m$*\033[0m"; }   # 绿色
 hint() { echo -e "\033[34m\033[01m$*\033[0m"; }   # 蓝色
 reading() { read -rp "$(info "$1")" "$2"; }
-text() { grep -q '\$' <<< "${E[$*]}" && eval echo "\$(eval echo "\${${L}[$*]}")" || eval echo "\${${L}[$*]}"; }
 
 # 清理可能存在的旧的 AUTOLOADER_DIR 目录
 clean_old_directory() {
